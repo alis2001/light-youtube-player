@@ -6,22 +6,32 @@
 		h1{
 			float: center;
 		}
+		.edit:hover{
+			 background-color: grey;
+
+		}
 	</style>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 <body>
+	
+
+	
+	
 	<h1>Embed</h1>
 	<br><br>
-	<h2>Sam Smith, Normani - Dancing With A Stranger</h2>
+	<h2 class="edit">Sam Smith, Normani - Dancing With A Stranger</h2>
 	<div class="light-video">
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/av5JD1dfj_c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 	<br><br>
-	<h2>Ariana Grande - 7 rings</h2>
+	<h2 class="edit">Ariana Grande - 7 rings</h2>
 	<div class="light-video">
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/QYh6mYIJG2Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 	<br><br>
-	<h2>Halsey - Without Me</h2>
+	<h2 class="edit">Halsey - Without Me</h2>
 	<div class="light-video">
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/ZAfAud_M_mg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
@@ -40,6 +50,21 @@
 				$('.light-video').html("<h6>Video is gone and now I am here</h6>");
 			5.Send me an email and exaplin your observation.
 		*/	
+	</script>
+	<script type="text/javascript">
+			
+		$(document).ready(function(){
+			$(".edit").click(function(){
+				$("iframe").hide();
+			})
+		});
+
+		$(document).ready(function(){
+			  $("h2").click(function(){
+				$("h2").html("HEY");
+			});
+		});
+
 	</script>
 </body>
 </html>
