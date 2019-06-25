@@ -6,12 +6,9 @@
 		h1{
 			float: center;
 		}
-		.edit:hover{
-			 background-color: grey;
-
-		}
+		
 	</style>
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			
 
 </head>
 <body>
@@ -53,17 +50,10 @@
 	</script>
 	<script type="text/javascript">
 			
-		$(document).ready(function(){
-			$(".edit").click(function(){
-				$("iframe").hide();
-			})
-		});
 
-		$(document).ready(function(){
-			  $("h2").click(function(){
-				$("h2").html("HEY");
-			});
-		});
+		var htmlContent = $('.light-video').html();
+		console.log(htmlContent);
+		$('.light-video').html("<h6>Video is gone and now I am here</h6>");
 
 	</script>
 </body>
